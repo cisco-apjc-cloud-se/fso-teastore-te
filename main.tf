@@ -33,13 +33,22 @@ resource "thousandeyes_http_server" "http_tests" {
 
   content_regex = ".*"
 
+
   // NOTE: Bug with API/Provider?  Need to save test in GUI to match settings
-  network_measurements = 1
-  mtu_measurements = 1
+  network_measurements = 0
+  mtu_measurements = 0
   bandwidth_measurements = 0
-  bgp_measurements = 1
-  use_public_bgp = 1
+  bgp_measurements = 0
+  use_public_bgp = 0
   // num_path_traces = 0
+
+  // // NOTE: Bug with API/Provider?  Need to save test in GUI to match settings
+  // network_measurements = 1
+  // mtu_measurements = 1
+  // bandwidth_measurements = 0
+  // bgp_measurements = 1
+  // use_public_bgp = 1
+  // // num_path_traces = 0
 
   dynamic "agents" {
     for_each = toset(var.agent_list)
