@@ -12,6 +12,6 @@ agent_list = [
 http_tests = {
   teastore = {
     name = "teastore-webui"
-    url = "http://fso-demo-app.cisco.com:8080/tools.descartes.teastore.webui/"
+    url = "http://fso-demo-app.cpocsyd.com:8080/tools.descartes.teastore.webui/"
   }
 }
