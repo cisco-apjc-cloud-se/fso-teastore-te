@@ -43,7 +43,6 @@ resource "thousandeyes_http_server" "http_tests" {
   // use_public_bgp = 0
   // // num_path_traces = 0
 
-
   // Updated Settings
   network_measurements = 1
   mtu_measurements = 1
