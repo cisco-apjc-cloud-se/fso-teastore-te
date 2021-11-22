@@ -1,4 +1,11 @@
 terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "mel-ciscolabs-com"
+    workspaces {
+      name = "fso-teastore-te"
+    }
+  }
   required_providers {
     thousandeyes = {
     #   source = "william20111/thousandeyes"
